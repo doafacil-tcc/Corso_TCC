@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".doador.DoadorDoacaoFinalizada"></activity>
+        <activity android:name=".ong.OngSolicitarCampanha"></activity>
+        <activity android:name=".ong.OngSolicitarDoacaoUnica" />
+        <activity android:name=".doador.DoadorDoacaoFinalizada" />
         <activity android:name=".ong.OngEscolhaTipoDoacao" />
         <activity android:name=".doador.DoadorEditarPerfil" />
         <activity android:name=".ong.OngEditarPerfil" />

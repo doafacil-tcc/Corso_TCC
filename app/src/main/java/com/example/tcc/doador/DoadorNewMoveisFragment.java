@@ -221,7 +221,7 @@ public class DoadorNewMoveisFragment extends Fragment implements AdapterView.OnI
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 6) {
+        if (requestCode == 12) {
             mSelectedUri1 = data.getData();
             Bitmap bitmap = null;
             try {
@@ -231,7 +231,7 @@ public class DoadorNewMoveisFragment extends Fragment implements AdapterView.OnI
             } catch (IOException e) { }
         }
 
-        if (requestCode == 7) {
+        if (requestCode == 13) {
             mSelectedUri2 = data.getData();
             Bitmap bitmap = null;
             try {
@@ -241,7 +241,7 @@ public class DoadorNewMoveisFragment extends Fragment implements AdapterView.OnI
             } catch (IOException e) { }
         }
 
-        if (requestCode == 8) {
+        if (requestCode == 14) {
             mSelectedUri3 = data.getData();
             Bitmap bitmap = null;
             try {
@@ -255,19 +255,19 @@ public class DoadorNewMoveisFragment extends Fragment implements AdapterView.OnI
     private void selectPhoto1() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, 6);
+        startActivityForResult(intent, 12);
     }
 
     private void selectPhoto2() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, 7);
+        startActivityForResult(intent, 13);
     }
 
     private void selectPhoto3() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, 8);
+        startActivityForResult(intent, 14);
     }
 
     @Override

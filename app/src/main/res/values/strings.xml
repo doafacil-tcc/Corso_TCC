@@ -24,6 +24,16 @@
         <item>Parte Inferior</item>
     </string-array>
 
+    <string-array name="spnCategoria">
+        <item>Escolha...</item>
+        <item>Roupas</item>
+        <item>Brinquedos</item>
+        <item>Livros</item>
+        <item>Móveis</item>
+        <item>Outros</item>
+
+    </string-array>
+
     <string-array name="spnTipoLivroDoacao">
         <item>Escolha...</item>
         <item>Educativo</item>

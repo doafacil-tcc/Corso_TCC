@@ -2,12 +2,14 @@ package com.example.tcc.ong;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.tcc.R;
+import com.example.tcc.doador.DoadorDoacaoFinalizada;
 
 public class OngEscolhaTipoDoacao extends AppCompatActivity {
 
@@ -24,14 +26,16 @@ public class OngEscolhaTipoDoacao extends AppCompatActivity {
         btnCamapnha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OngEscolhaTipoDoacao.this, "CAMPANHA", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(OngEscolhaTipoDoacao.this, OngSolicitarCampanha.class);
+                startActivity(intent);
             }
         });
 
         btnUnica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OngEscolhaTipoDoacao.this, "ÚNICA", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(OngEscolhaTipoDoacao.this, OngSolicitarDoacaoUnica.class);
+                startActivity(intent);
             }
         });
     }
